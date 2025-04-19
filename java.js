@@ -1,13 +1,12 @@
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
-
-
+const currentPath = window.location.pathname;
 document.querySelectorAll(".nav-link").forEach(link => {
   const href = link.getAttribute("href");
-
-  if (href === currentPage) {
+  if (currentPath.endsWith(href)) {
     link.classList.add("active");
   }
 });
+
+
 function calcularResultado() {
   const respuestas = [
     document.querySelector('input[name="pregunta1"]:checked')?.value,
