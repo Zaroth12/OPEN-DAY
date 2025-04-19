@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+  }
+.nav-link {
+    color: #002060;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #002060;
+    bottom: -2px;
+    left: 0;
+  }
+  .custom-navbar {
+    box-shadow: inset 0 4px 6px -6px rgba(0, 0, 0, 0.5); /* sombra interna opcional */
+    border-bottom: 3px solid #002060; /* color sólido en la parte inferior */
+    background-color: #f8f9fa; /* color de fondo claro, opcional */
+    z-index: 1000;
+    position: relative;
+  }
+#header{
+    padding: 15px;
+}  
+
+#text1{
+    font-family: "Baloo Tamma 2", system-ui;;
+    font-weight: 800;
+    font-size: 120px;
+    color: #003F87;
+    margin-bottom: -30px;
+}
+#text2{
+    font-family: "Baloo Tamma 2", system-ui;;
+    font-weight: 600;
+    font-size: 90px;
+    color: #003F87;
+}
+#btn{
+    font-family: "Baloo Tamma 2", system-ui;;
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+    background-color: #EFAA15;
+}
+#text3{
+  color: #11316A;
+  font-family: "Baloo Tamma 2", system-ui;
+  font-weight: 800;
+  font-size: 90px;
+}
+#card{
+  border-radius: 22px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+#card:hover{
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card-title{
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: #11316A;
+  font-weight: 600;
+}
+#text4{
+  color: #ffffff;
+  font-family: "Baloo Tamma 2", system-ui;
+  font-weight: 800;
+  font-size: 90px;
+}
+.footer {
+  background-color: #f8f9fa;
+  border: 1px solid #b9b9b9;
+  padding-bottom: 10px;
+  padding-top: 20px;
+
+
+}
+.footer-title {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+.footer-contact {
+  margin-bottom: 10px;
+  color: #00519E;
+}
+.footer a {
+  color: #6c757d;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+.institution-info {
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.section-title {
+  color: #ffffff;
+  font-family: "Baloo Tamma 2", system-ui;
+  font-weight: 800;
+  font-size: 90px;
+}
+.month-title {
+  color: #3498db;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.event-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  border: none;
+}
+.testimonial-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  border: none;
+  transition: transform 0.3s;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+.testimonial-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+.testimonial-name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+.testimonial-role {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.price-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.price-title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+.price-amount {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3498db;
+}
+.calendar-img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+}
+#open{
+  font-family: "Baloo Tamma 2", system-ui;
+  font-weight: 800;
+  font-size: 70px;
+  padding-top: 30px;
+}
+#costos{
+  font-family: "Baloo Tamma 2", system-ui;
+  font-weight: 800;
+  font-size: 70px;
+  color: #ffffff;
+}
+#open2{
+  font-family: "Baloo Tamma 2", system-ui;
+  font-weight: 800;
+  font-size: 40px;
+  background-color: #EFAA15;
+  color: #ffffff;
+}
+#text5{
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+}
+.arte-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+.arte-subtitle {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.arte-text {
+  color: #495057;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.arte-img {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.btn-inscribete {
+  background-color: #EFAA15;
+  color: white;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s;
+  font-size: 30px;
+}
+.btn-inscribete:hover {
+  background-color: #ff8f10;
+  transform: translateY(-3px);
+  color: white;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+.btn-inscribete i {
+  margin-left: 8px;
+}
+#text6{
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #ffffff;
+}
+#icons{
+  font-size: 100px;
+  color: white;
+}
+#text7{
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#text8{
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #11316A;
+}
+#text9{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #11316A;
+}
