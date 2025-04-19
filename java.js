@@ -1,4 +1,5 @@
-const currentPage = window.location.pathname.split("/").pop();
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
 
 document.querySelectorAll(".nav-link").forEach(link => {
   const href = link.getAttribute("href");
