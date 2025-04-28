@@ -263,3 +263,111 @@ html {
   font-weight: 400;
   color: #11316A;
 }
+ /* Estilo para las tarjetas */
+ .tarjeta-color {
+  perspective: 1000px;
+  transition: box-shadow 0.3s ease;
+}
+.tarjeta-color:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+.carta {
+  width: 100%;
+  height: 500px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  cursor: pointer;
+  position: relative;
+}
+.carta-volteada {
+  transform: rotateY(180deg);
+}
+.cara-carta, .cara-carta-trasera {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cara-carta {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cara-carta-trasera {
+  background: #f8f9fa;
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Botón fijo */
+#boton-unirme {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: latido 1.5s infinite;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+/* Animación de latido */
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.color-circulo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.color-circulo:hover {
+  transform: scale(1.1);
+}
+.borde-blanco {
+  border: 2px solid white;
+}
+
+/* Animación de brillo */
+.animacion-brillo {
+  animation: brillo 1s ease forwards;
+}
+
+@keyframes brillo {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0px white;
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 10px white;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0px white;
+  }
+}
+
+.mensaje-mezcla {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.mensaje-mezcla.mostrar {
+  opacity: 1;
+}
